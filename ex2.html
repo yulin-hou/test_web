@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歡迎訊息範例</title>
+</head>
+<body>
+    <script >
+        window.onload = function() {
+            let today = new Date();
+            let year = today.getFullYear();
+            let month = today.getMonth() + 1;
+            let day = today.getDate();           
+
+            let currentDate = `${year}-${month}-${day}`;
+
+            window.alert(`歡迎來到本網站！今天的日期是：${currentDate}`);
+        };
+    </script>
+</body>
+</html>
